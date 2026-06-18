@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Ads Forecast Calculator</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="logo-wrap">
+            <img src="./airr-digital-logo-white.png" alt="Airr Digital" />
+          </span>
+          <div>
+            <p>New launch forecast</p>
+            <h1>Ads Forecast Calculator</h1>
+          </div>
+        </div>
+
+        <div class="top-actions">
+          <button class="secondary-button" type="button" id="copy-summary" title="Copy the current forecast">
+            Copy forecast
+          </button>
+          <button class="primary-button" type="button" id="reset-scenario" title="Reset this scenario">
+            Reset scenario
+          </button>
+        </div>
+      </header>
+
+      <section class="scenario-tabs" aria-label="Forecast scenarios" id="scenario-tabs"></section>
+
+      <section class="forecast-grid">
+        <article class="panel input-panel">
+          <div class="panel-heading">
+            <div>
+              <p>Scenario model</p>
+              <h2 id="scenario-title">Expected</h2>
+            </div>
+            <span class="status-pill" id="scenario-pill">Base case</span>
+          </div>
+
+          <div class="scenario-copy">
+            <strong id="scenario-summary">A realistic first-launch forecast.</strong>
+            <span id="scenario-description">Use this to show what a new ad launch can reasonably produce.</span>
+          </div>
+
+          <div class="inputs" id="input-fields"></div>
+        </article>
+
+        <article class="panel results-panel">
+          <div class="panel-heading">
+            <div>
+              <p>Forecast output</p>
+              <h2>Calculated results</h2>
+            </div>
+            <span class="status-pill blue">Live</span>
+          </div>
+
+          <div class="results-sections" id="results-sections"></div>
+        </article>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">Forecast copied</div>
+    <script src="./app.js"></script>
+  </body>
+</html>
