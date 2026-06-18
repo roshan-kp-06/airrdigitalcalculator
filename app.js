@@ -3,9 +3,9 @@ const STORAGE_KEY = "airr-new-ads-forecast-v2";
 const inputFields = [
   { key: "adSpend", label: "Ad spend", type: "currency" },
   { key: "costPerBookedMeeting", label: "Cost per booked meeting", type: "currency" },
-  { key: "showRate", label: "Show rate", type: "percent" },
-  { key: "qualifiedRate", label: "Qualified rate", type: "percent" },
-  { key: "closeRate", label: "Close rate", type: "percent" },
+  { key: "showRate", label: "Show rate (on booked calls)", type: "percent" },
+  { key: "qualifiedRate", label: "Qualified rate (on shown calls)", type: "percent" },
+  { key: "closeRate", label: "Close rate (on qualified calls)", type: "percent" },
   { key: "aov", label: "Average order value", type: "currency" },
   { key: "ltv", label: "Lifetime value", type: "currency" },
 ];
